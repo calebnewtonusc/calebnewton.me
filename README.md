@@ -1,4 +1,6 @@
-# Caleb's iPad: Personal Portfolio
+# calebnewton.me
+
+My site, built as an iPad. Live at [calebnewton.me](https://calebnewton.me)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
