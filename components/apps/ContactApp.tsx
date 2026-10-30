@@ -44,16 +44,12 @@ You do not need to polish it before you send it.`,
     fromShort: "CN",
     subject: "What I'm building right now",
     preview:
-      "A stealth startup out of PearX, a church AI agency with Gavin, and TTS...",
+      "Firm Foundation with Gavin, and TTS with Tyler...",
     body: `Hey,
 
 Here's what my weeks actually go to right now:
 
-I'm the Founding GTM Engineer at a startup that's still in stealth. It's in PearX W27, and it's about relationships, health and cognitive offloading. That's all I can say yet.
-
-I co-founded Firm Foundation with Gavin Munroe. We build and run the back end for churches, and I own pricing, contracts and outbound.
-
-I'm a Capital Formation Engineer at Zeutara, running targeting and outbound for five companies raising through the firm.
+I co-founded Firm Foundation with Gavin Munroe. We rebuild church websites so every guest can plan a visit, join a group or serve, synced to the tools the church already runs. He builds, and I own pricing, contracts and outbound.
 
 And I'm Co-President of Trojan Tech Solutions with Tyler Larsen. We took it over dormant, and our cabinet did the real recruiting. 30+ members in three months.
 

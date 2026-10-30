@@ -87,32 +87,6 @@ export const social = {
 
 export const experience = [
   {
-    id: "amber-intelligence",
-    title: "Founding GTM Engineer",
-    company: "Stealth Startup",
-    period: "Jul 2026 - Present",
-    year: "2026",
-    location: "Remote",
-    logo: null,
-    color: "#111827",
-    website: "",
-    description: "Relationships, health & cognitive offloading. (PearX W27)",
-    achievements: [
-      "The founders handed me real responsibility long before I'd earned it. I spent the summer working out what made us different, and landed on one idea: your contacts should belong to you. It became the story we raise on.",
-      "Our data lived in six places that didn't talk to each other, so I pulled it into one relationship graph and built PeopleRank to rank relationships even when the data has holes in it.",
-    ],
-    skills: [
-      "GTM",
-      "Product",
-      "Fundraising",
-      "Relationship Graph",
-      "Retrieval",
-      "Claude",
-      "Perplexity",
-    ],
-    photos: [],
-  },
-  {
     id: "firm-foundation",
     title: "Co-Founder",
     company: "Firm Foundation",
@@ -122,28 +96,11 @@ export const experience = [
     logo: null,
     color: "#2563EB",
     website: "https://firmfoundation.tech",
-    description: "AI agency that builds and runs the back end for churches.",
+    description: "Church websites that bring guests in, synced to the tools churches already run.",
     achievements: [
       "Gavin and I started it together, 50/50, to take the back-end work off churches so they can spend their time on people. He builds, and I handle pricing, contracts and outbound.",
     ],
     skills: ["Founding", "GTM", "Pricing", "Outbound", "AI Agents"],
-    photos: [],
-  },
-  {
-    id: "zeutara",
-    title: "Capital Formation Engineer",
-    company: "Zeutara",
-    period: "Sep 2026 - Present",
-    year: "2026",
-    location: "New York, NY (Hybrid)",
-    logo: null,
-    color: "#111827",
-    website: "",
-    description: "Private markets execution architecture.",
-    achievements: [
-      "Five companies are raising through the firm, and I get to own who we reach and what we say to them.",
-    ],
-    skills: ["Capital Formation", "GTM Engineering", "Targeting", "Outbound"],
     photos: [],
   },
   {
@@ -363,7 +320,7 @@ export const health = {
       title: "What's going great",
       color: "#FF9500",
       quote: "I've never known this many people this well.",
-      body: "I stopped asking people what their major is and started asking what they're passionate about, and it changed everything. My week is full of meals with people I actually know now.\n\nI'm Co-President of Trojan Tech Solutions, I'm the Founding GTM Engineer at a stealth startup out of PearX. I'm at the gym every morning at 6, I'm part of a weekly devotional with GenCollege, and I meet with a mentor from church every week. Life is good!",
+      body: "I stopped asking people what their major is and started asking what they're passionate about, and it changed everything. My week is full of meals with people I actually know now.\n\nI'm Co-President of Trojan Tech Solutions, I co-founded Firm Foundation with Gavin. I'm at the gym every morning at 6, I'm part of a weekly devotional with GenCollege, and I meet with a mentor from church every week. Life is good!",
     },
     {
       id: "dad",
@@ -734,10 +691,10 @@ export const organizations = [
     shortName: "TTS",
     role: "Co-President",
     period: "Aug 2025 - Present",
-    logo: "/assets/logos/tts-helmet.png",
+    logo: "/assets/logos/tts-a15.png",
     color: "#990000",
     description:
-      "USC's student technology consulting org, rebuilt from zero with a team I'm really proud of.",
+      "USC's AI implementation and go-to-market lab, rebuilt from zero with a team I'm really proud of.",
     achievements: [
       "Matthew Kim handed TTS to Tyler Larsen and me after it sat empty for over a year. Our cabinet of 10 did the real recruiting, each pulling in people from their own major, and we hit 30+ members in 3 months.",
       "Then we started T Combinator, which pairs USC builders with venture-backed startups in whatever role the startup actually needs.",
@@ -1305,7 +1262,7 @@ export const notifications: NotificationDef[] = [
     id: "gpt-ask",
     app: "calebgpt",
     title: "Ask me anything about Caleb",
-    body: "I have read everything on this iPad. Start with what he's building in stealth.",
+    body: "I have read everything on this iPad. Start with Firm Foundation, the church work he and Gavin are building.",
     minutesAgo: 0,
   },
   {
@@ -1332,8 +1289,8 @@ export const notifications: NotificationDef[] = [
   {
     id: "work-prev",
     app: "work",
-    title: `${experience[1].title}, ${experience[1].company}`,
-    body: `${experience[1].period}. ${experience[1].description}`,
+    title: `${organizations[0].role}, ${organizations[0].name}`,
+    body: organizations[0].achievements[0],
     minutesAgo: 51,
   },
   {
@@ -1395,10 +1352,10 @@ export interface LockNotificationDef {
 
 export const lockNotifications: LockNotificationDef[] = [
   {
-    id: "lock-stealth",
+    id: "lock-ff",
     app: "work",
-    title: "Stealth (PearX W27)",
-    body: "Founding GTM Engineer. Relationships, health & cognitive offloading.",
+    title: "Firm Foundation",
+    body: "Gavin and I build church websites so every guest can plan a visit, join a group or serve.",
     when: "now",
   },
   {

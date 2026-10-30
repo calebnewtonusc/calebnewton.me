@@ -4,8 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Caleb Newton",
   description:
-    "Caleb Newton. Autistic Jesus follower and USC sophomore at the Iovine & Young Academy. Founding GTM Engineer at a stealth startup (PearX W27).",
-  keywords: ["Caleb Newton", "USC", "Iovine & Young Academy", "PearX", "GTM"],
+    "Caleb Newton. Autistic Jesus follower and USC sophomore at the Iovine & Young Academy. Co-Founder of Firm Foundation, church websites with Gavin Munroe.",
+  keywords: ["Caleb Newton", "USC", "Iovine & Young Academy", "Firm Foundation", "Trojan Tech Solutions"],
   authors: [{ name: "Caleb Newton" }],
   icons: {
     icon: "/favicon.png",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Caleb Newton",
-    description: "Autistic Jesus follower. USC Iovine & Young Academy. Founding GTM Engineer at a stealth startup (PearX W27).",
+    description: "Autistic Jesus follower. USC Iovine & Young Academy. Co-Founder of Firm Foundation, church websites with Gavin Munroe.",
     url: "https://calebnewton.me",
     siteName: "Caleb Newton",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Caleb Newton",
-    description: "Autistic Jesus follower. USC Iovine & Young Academy. Founding GTM Engineer at a stealth startup (PearX W27).",
+    description: "Autistic Jesus follower. USC Iovine & Young Academy. Co-Founder of Firm Foundation, church websites with Gavin Munroe.",
   },
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
               url: "https://calebnewton.me",
               image: "https://calebnewton.me/assets/CalebAtUSC.jpg",
               jobTitle: "Founding GTM & Product Lead",
-              worksFor: { "@type": "Organization", name: "Stealth Startup (PearX W27)" },
+              worksFor: { "@type": "Organization", name: "Firm Foundation Technologies", url: "https://firmfoundation.tech" },
               alumniOf: {
                 "@type": "CollegeOrUniversity",
                 name: "University of Southern California, Iovine & Young Academy",
