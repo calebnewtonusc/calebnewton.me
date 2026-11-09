@@ -21,7 +21,6 @@ const SECTIONS = [
       "gencollege",
       "maai",
       "troy-philippines",
-      "dragon-boat",
       "scoutfitters",
       "flavors",
       "boardgames",

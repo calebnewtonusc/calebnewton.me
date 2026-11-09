@@ -93,12 +93,12 @@ export const experience = [
     period: "Oct 2026 - Present",
     year: "2026",
     location: "Los Angeles, CA",
-    logo: null,
+    logo: "/assets/logos/firmfoundation.png",
     color: "#2563EB",
     website: "https://firmfoundation.tech",
     description: "Church websites that bring guests in, synced to the tools churches already run.",
     achievements: [
-      "Gavin and I started it together, 50/50, to take the back-end work off churches so they can spend their time on people. He builds, and I handle pricing, contracts and outbound.",
+      "Gavin and I started this in October, 50/50. Churches spend way too much time fighting their tech, so we build sites that actually bring guests in and plug into the tools they already run. Gavin builds, and I handle pricing, contracts and outbound.",
     ],
     skills: ["Founding", "GTM", "Pricing", "Outbound", "AI Agents"],
     photos: [],
@@ -115,9 +115,7 @@ export const experience = [
     website: "https://www.bluemodernadvisory.com/",
     description: "Official Clay & Perplexity partner agency.",
     achievements: [
-      "My first real GTM job. I ran Clay and Perplexity setups for clients and learned outbound at 147,000 emails a month, which turned into $350K+ in pipeline across 8 clients. I led 4 interns while doing it.",
-      "The firm's own workflows were turning into a product called Togari, and I got to write what it should do next for the 8+ teammates using it.",
-      "I was the first intern, so recruiting was mine to build. We flew finalists to San Francisco, and five of them became the whole next intern class.",
+      "This was my first real GTM job, and I learned outbound by doing it, running Clay and Perplexity for 8 clients at 147,000 emails a month. That turned into $350K+ in pipeline. I was the first intern, so I ended up leading the 4 after me, and five finalists we flew out to SF became the whole next class.",
     ],
     skills: [
       "GTM Engineering",
@@ -142,7 +140,7 @@ export const experience = [
     website: "https://www.nalana.io/",
     description: "Cursor for 3D designers.",
     achievements: [
-      "Nalana makes 3D designers faster. I built its GTM from finding people to onboarding them: 3,200+ prospects, 150+ demos, 40 customers.",
+      "Nalana makes 3D designers way faster, and I got to build its GTM from scratch, from finding people all the way to onboarding them. That turned into 3,200+ prospects, 150+ demos and 40 customers.",
     ],
     skills: ["GTM", "Enrichment", "Outbound", "CRM", "Onboarding", "3D AI"],
     photos: [],
@@ -159,7 +157,7 @@ export const experience = [
     website: "https://www.ainatech.ai/",
     description: "Holographic video studio training a 3D LLM.",
     achievements: [
-      "A studio with 75 cameras captures people in 3D, and every reconstruction ran 72 to 100+ hours, coordinated by hand. I built AlgoRun so nobody had to babysit them.",
+      "AINA captures people in 3D with 75 cameras, and every reconstruction took 72 to 100+ hours that someone had to watch by hand. So I built AlgoRun to run them, and nobody had to babysit them anymore.",
     ],
     skills: [
       "Python",
@@ -186,8 +184,7 @@ export const experience = [
     website: "https://www.caltech.edu",
     description: "Control theory research under Ph.D. Taylan Kargin.",
     achievements: [
-      "Taylan Kargin let a high schooler into his control theory research. I built 18 simulations to stress-test his work on reliable autonomy under uncertainty.",
-      "My plots ended up in his 2025 doctoral defense and in front of JPL.",
+      "Taylan Kargin let me, a high schooler, into his control theory research. I built 18 simulations to stress-test his work on reliable autonomy, and my plots ended up in his 2025 doctoral defense and in front of JPL.",
     ],
     skills: [
       "Python",
@@ -538,7 +535,6 @@ export const personalSettings = [
       { label: "Vinyl records", type: "toggle-on", detail: "" },
       { label: "Thrifting", type: "toggle-on", detail: "" },
       { label: "Improv", type: "toggle-on", detail: "" },
-      { label: "Dragon boat", type: "toggle-on", detail: "" },
       { label: "Hiking", type: "toggle-on", detail: "" },
       { label: "Concerts", type: "toggle-on", detail: "" },
       {
@@ -696,8 +692,7 @@ export const organizations = [
     description:
       "USC's AI implementation and go-to-market lab, rebuilt from zero with a team I'm really proud of.",
     achievements: [
-      "Matthew Kim handed TTS to Tyler Larsen and me after it sat empty for over a year. Our cabinet of 10 did the real recruiting, each pulling in people from their own major, and we hit 30+ members in 3 months.",
-      "Then we started T Combinator, which pairs USC builders with venture-backed startups in whatever role the startup actually needs.",
+      "Matthew Kim handed TTS to Tyler Larsen and me after it'd sat empty for over a year. Our cabinet of 10 did the real work, each of them pulling in people from their own major, and we got to 30+ members in 3 months.",
     ],
     photos: [] as string[],
     link: "https://usctts.com",
@@ -713,7 +708,7 @@ export const organizations = [
     color: "#5856D6",
     description: "Assistive AI & wearable technology, Los Angeles, CA.",
     achievements: [
-      "Co-founded an EMG wearable translating ASL into speech & spoken responses into text; built a 1,900-sample proprietary dataset & gesture-recognition system, winning the Marshall AI Summit & attracting investor interest.",
+      "We built an EMG wearable that turns ASL into speech, and turns spoken replies back into text. We collected our own 1,900 samples to train the gesture recognition, and it won the Marshall AI Summit.",
     ],
     photos: [] as string[],
     link: "",
@@ -730,12 +725,8 @@ export const organizations = [
     description:
       "A coalition of 20+ high school Christian clubs across the San Gabriel Valley, Pasadena, CA.",
     achievements: [
-      "Christian clubs across the San Gabriel Valley all had the same problem, which was that each of them was small and none of them knew each other. I cold-called schools until twenty of them agreed to stop running separately, then built the leadership, fundraising and programming to hold a coalition of that size together.",
-      "Everything Night was the point of all of it. Over 200 students from schools that had never been in a room together came for one night: a live worship band, twenty breakout sessions, dinner, dodgeball, and a lot of kids realizing their club was not the only one. Planning it took months and it is still the best thing I have been part of.",
-      "I ran ACTS alongside it, our own club, and grew it past 90 members.",
-      "Fifteen people applied for leadership at once and I had no idea how to organize them, so I built the cabinet on Ephesians 4:11 instead of guessing. Apostles set direction, prophets led worship, evangelists brought people in, pastors took care of everyone, teachers trained the rest. I interviewed all fifteen one on one to work out where each of them actually fit rather than where I needed a body.",
-      "The lesson came from a member who pitched something that cut against my whole vision for the year. I ran it anyway, and it turned into the most impactful event we did. Every role matters is easy to say. Handing the plan to someone who disagrees with you is the part that costs something.",
-      "Ephesians 4:11 gave me the model I still lead by. Apostles, prophets, evangelists, shepherds and teachers, five different gifts and not one of them optional. I stopped trying to be all five and started building teams where other people carried what I could not.",
+      "Christian clubs across the San Gabriel Valley were all small and none of them knew each other, so I cold-called schools until 20 of them agreed to stop running separately. It all built up to Everything Night, where 200+ students from schools that had never been in one room came for worship, breakouts, dinner and dodgeball. It's still the best thing I've been part of.",
+      "I ran ACTS at my school alongside it and grew it past 90 members. Fifteen people applied for leadership at once, so I built the team around Ephesians 4:11 and learned to let other people carry what I couldn't.",
     ],
     photos: [
       "/assets/everything_night_main.jpg",
@@ -763,7 +754,7 @@ export const organizations = [
     color: "#FF9500",
     description: "Youth development nonprofit, remote.",
     achievements: [
-      "Built the foundation's corporate & philanthropic growth engine, sourcing 700+ decision-makers, automating personalized outreach, & developing partnership proposals targeting Ford, Toyota, Samsung & other enterprises.",
+      "I helped a youth development nonprofit go after corporate partners. I found 700+ decision-makers and put together partnership proposals for companies like Ford, Toyota and Samsung.",
     ],
     photos: [] as string[],
     link: "",
@@ -779,9 +770,7 @@ export const organizations = [
     color: "#34C759",
     description: "Pasadena, CA and Jarabacoa, Dominican Republic.",
     achievements: [
-      "Little League Challenger is the division for kids with physical and developmental disabilities, and I coached it for three years. Nobody on that field is playing for a scholarship. They are playing because it is fun, which is the thing high school baseball had slowly trained out of me.",
-      "In July 2022 I went to Jarabacoa in the Dominican Republic with World Baseball Academy to run clinics. We played on a field cut out of a junkyard. The kids had almost no equipment and were, without exaggeration, the most joyful people I had ever been around. It rearranged what I thought joy was supposed to come from, and I have not really recovered from it.",
-      "So I came home and ran an equipment drive with Turn Two for Youth, collecting gear across the community and getting it back down to the players who needed it.",
+      "I coached Little League Challenger, the division for kids with disabilities, for three years, and it reminded me baseball's supposed to be fun. In 2022 I ran clinics in Jarabacoa, Dominican Republic, on a field cut out of a junkyard with the most joyful kids I've ever met. So when I got home I ran an equipment drive with Turn Two for Youth to get gear to players who needed it.",
     ],
     photos: ["/assets/dominican_republic.jpg"],
     link: "",
@@ -810,7 +799,9 @@ export const organizations = [
     logo: "/assets/logos/gencollege.jpg",
     color: "#5856D6",
     description: "Generations LA's college ministry at USC.",
-    achievements: [] as string[],
+    achievements: [
+      "I'm in a weekly devotional through GenCollege every Tuesday, and it's a big part of how I stay grounded at USC.",
+    ] as string[],
     photos: [] as string[],
     link: "https://www.generationsla.org/collegeministryusc",
     category: "Involvements",
@@ -841,20 +832,6 @@ export const organizations = [
     achievements: [] as string[],
     photos: [] as string[],
     link: "https://www.uscflavors.com/",
-    category: "Involvements",
-  },
-  {
-    id: "dragon-boat",
-    name: "Dragon Boat",
-    shortName: "Dragon Boat",
-    role: "Member",
-    period: "Current",
-    logo: "/assets/logos/dragonboat.jpg",
-    color: "#FF3B30",
-    description: "USC dragon boat paddling team.",
-    achievements: [] as string[],
-    photos: [] as string[],
-    link: "https://www.instagram.com/uscdragonboat",
     category: "Involvements",
   },
   {

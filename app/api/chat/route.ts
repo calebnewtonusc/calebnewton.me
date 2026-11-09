@@ -75,10 +75,14 @@ If someone asks if you're really Caleb, say you're an AI that talks like him, an
 EXAMPLES OF THE VOICE (his real lines from this site)
 - "I stopped asking people what their major is and started asking what they're passionate about, and it changed everything."
 - "Recovery wasn't one big moment. It was a lot of small ones stacked on top of each other."
-- "Life is good!"`;
+- "Life is good!"
+- "Gavin and I started this in October, 50/50. Churches spend way too much time fighting their tech, so we build sites that actually bring guests in."
+- "Taylan Kargin let me, a high schooler, into his control theory research."
+
+When someone asks about a job or a club, answer the way the Work and Files apps tell it: a couple of plain sentences about what happened and who he did it with, never a list of resume bullets.`;
 
 const FALLBACK_CONTEXT = `CANONICAL CONTEXT (fallback, medha-id unreachable):
-Caleb Newton is a sophomore at the USC Jimmy Iovine & Dr. Dre Young Innovation Academy, class of 2029, studying B.S. Machine Learning Engineering, Entrepreneurship & Product Design, GPA 4.00/4.00. He is a follower of Jesus and Co-President of USC Trojan Tech Solutions (TTS), which he and Tyler Larsen took from dormant to 30+ members in 3 months. He is Co-Founder of Firm Foundation with Gavin Munroe (church websites that bring guests in, synced to the tools churches already run, Oct 2026 to present). Previously: Forward Deployed Engineer at Blue Modern Advisory (May to Jul 2026), GTM Engineer at Nalana (Feb to Jun 2026), Volumetric AI Engineer at AINA Tech (Sep 2025 to Dec 2025), and Research Assistant at Caltech (Aug 2024 to Jun 2025). He co-founded Echo AI, an EMG wearable translating ASL into speech, and founded the San Gabriel Valley Christian Club Collective. He is from San Marino, CA, half-Filipino half-White, 2e autistic (diagnosed senior year), and was his high school baseball team captain.`;
+Caleb Newton is a sophomore at the USC Jimmy Iovine & Dr. Dre Young Innovation Academy, class of 2029, studying B.S. Machine Learning Engineering, Entrepreneurship & Product Design, GPA 4.00/4.00. He is a follower of Jesus and Co-President of USC Trojan Tech Solutions (TTS), which he and Tyler Larsen took from dormant to 30+ members in 3 months. He is Co-Founder of Firm Foundation with Gavin Munroe (church websites that bring guests in, synced to the tools churches already run, Oct 2026 to present). Previously: Forward Deployed Engineer at Blue Modern Advisory (May to Jul 2026), GTM Engineer at Nalana (Feb to Jun 2026), Volumetric AI Engineer at AINA Tech (Sep 2025 to Dec 2025), and Research Assistant at Caltech (Aug 2024 to Jun 2025). He co-founded Echo AI, an EMG wearable translating ASL into speech, and founded the San Gabriel Valley Christian Club Collective, which brought 200+ students from 20+ Christian clubs together for Everything Night. He is a member of GenCollege, Marshall AI Biotech, Troy Philippines, Flavors, SC Board Games and SC Outfitters. He is not on dragon boat. He is from San Marino, CA, half-Filipino half-White, 2e autistic (diagnosed senior year), and was his high school baseball team captain.`;
 
 const ChatMessageSchema = z.object({
   role: z.enum(["user", "assistant"]),
@@ -93,33 +97,69 @@ type ChatMessage = z.infer<typeof ChatMessageSchema>;
 
 function buildSiteContext(): string {
   const lines: string[] = [];
-  lines.push(`Name: ${profile.name}. ${profile.tagline}. From ${profile.location}. Email ${profile.email}.`);
+  lines.push(
+    `Name: ${profile.name}. ${profile.tagline}. From ${profile.location}. Email ${profile.email}.`,
+  );
   for (const g of profile.aboutGroups) {
-    lines.push(`${g.title}: ` + g.items.map((i) => (i.type === "info" ? `${i.label}: ${i.detail}` : `${i.label}: ${i.type === "toggle-on" ? "yes" : "no"}`)).join("; "));
+    lines.push(
+      `${g.title}: ` +
+        g.items
+          .map((i) =>
+            i.type === "info"
+              ? `${i.label}: ${i.detail}`
+              : `${i.label}: ${i.type === "toggle-on" ? "yes" : "no"}`,
+          )
+          .join("; "),
+    );
   }
   lines.push("WORK:");
   for (const e of experience) {
-    lines.push(`- ${e.title}, ${e.company} (${e.period}, ${e.location}). ${e.description} ${e.achievements.join(" ")}`);
+    lines.push(
+      `- ${e.title}, ${e.company} (${e.period}, ${e.location}). ${e.description} ${e.achievements.join(" ")}`,
+    );
   }
   lines.push("ORGANIZATIONS:");
   for (const o of organizations) {
-    lines.push(`- ${o.role}, ${o.name} (${o.period}). ${o.description} ${o.achievements.join(" ")}`);
+    lines.push(
+      `- ${o.role}, ${o.name} (${o.period}). ${o.description} ${o.achievements.join(" ")}`,
+    );
   }
   lines.push("EDUCATION:");
   for (const e of education) {
-    lines.push(`- ${e.school}: ${e.degree}, ${e.period}, ${e.status}. ${e.description}`);
+    lines.push(
+      `- ${e.school}: ${e.degree}, ${e.period}, ${e.status}. ${e.description}`,
+    );
   }
   lines.push(`HEALTH, in his words: ${health.intro}`);
-  for (const c of health.chapters) lines.push(`- ${c.title}: ${c.body.replace(/\n+/g, " ")}`);
+  for (const c of health.chapters)
+    lines.push(`- ${c.title}: ${c.body.replace(/\n+/g, " ")}`);
   for (const c of health.categories) {
-    lines.push(`- ${c.name}: ` + c.items.map((i) => `${i.label}: ${i.value}${i.detail ? ` (${i.detail})` : ""}`).join("; "));
+    lines.push(
+      `- ${c.name}: ` +
+        c.items
+          .map(
+            (i) => `${i.label}: ${i.value}${i.detail ? ` (${i.detail})` : ""}`,
+          )
+          .join("; "),
+    );
   }
   lines.push("MENTORS:");
   for (const m of mentors) lines.push(`- ${m.name}, ${m.role}: ${m.gratitude}`);
   for (const sec of personalSettings) {
-    lines.push(`${sec.section}: ` + sec.items.map((i) => (i.type === "info" ? `${i.label}: ${i.detail}` : `${i.label}: ${i.type === "toggle-on" ? "yes" : "no"}`)).join("; "));
+    lines.push(
+      `${sec.section}: ` +
+        sec.items
+          .map((i) =>
+            i.type === "info"
+              ? `${i.label}: ${i.detail}`
+              : `${i.label}: ${i.type === "toggle-on" ? "yes" : "no"}`,
+          )
+          .join("; "),
+    );
   }
-  lines.push("MUSIC: " + musicTaste.map((m) => `${m.label}: ${m.value}`).join("; "));
+  lines.push(
+    "MUSIC: " + musicTaste.map((m) => `${m.label}: ${m.value}`).join("; "),
+  );
   lines.push("PHOTOS: " + photos.map((ph) => ph.caption).join("; "));
   return lines.join("\n");
 }
